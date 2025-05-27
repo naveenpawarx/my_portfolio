@@ -103,7 +103,7 @@ const SimulatedOSPage: React.FC = () => {
     { text: "[  0.524152] Memory check: All 16EB of RAM detected (in my dreams).", delay: 500 },
     { text: "[  1.123456] Mounting virtual file systems...", delay: 400 },
     { text: "[  1.567890] Network interface 'eth0_hack': bağlantı kuruldu (10 Gbps)", delay: 600 },
-    { text: "[  2.010101] Starting services: [matrix_screensaver] [coffee_compiler] [ai_overlord_daemon]", delay: 700 },
+    { text: "[  2.010101] Starting services: [matrix_screensaver] [coffee_compiler] [system_monitor_daemon]", delay: 700 },
     { text: "[  2.505050] Welcome to NP-OS (Kernel 6.7.8-hckr-edition)", delay: 500 },
     { text: `Login: ${OS_USER} (automatic login sequence initiated...)`, delay: 500 },
     { text: `Last login: ${new Date(Date.now() - 86400000).toLocaleString()} from /dev/console`, delay: 400 },

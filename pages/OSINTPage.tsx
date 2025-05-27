@@ -4,7 +4,7 @@ import AnimatedText from '../components/AnimatedText';
 import { INPUT_CLASSES, BUTTON_CLASSES, TYPING_TEXT_CYAN_CLASS } from '../constants';
 
 // Added by Naveen on May 28, 2025
-// Updated by Naveen on May 29, 2025: Removed GenAI, using local mock generation.
+// Updated by Naveen on May 29, 2025: Switched to local mock data generation for report simulation.
 const OSINTPage: React.FC = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
