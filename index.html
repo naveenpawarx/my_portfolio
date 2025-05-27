@@ -1,63 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naveen Pawar | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naveen Pawar - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace; /* Default hacker font */
+    }
+    /* Custom scrollbar for thematic consistency */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1a202c; /* dark-gray-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4299e1; /* blue-500 or a green like #38a169 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2b6cb0; /* blue-700 or a darker green */
+    }
+    .hacker-caret::after {
+      content: '_';
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.1",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
 </head>
-<body>
-  <canvas id="matrix-canvas"></canvas>
-  <header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section id="home">
-      <h1 id="intro-text"></h1>
-      <p class="subtitle">Cybersecurity Enthusiast | Software Engineer</p>
-    </section>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am an Associate System Engineer Trainee at Tata Consultancy Services with hands-on experience in Java, JavaScript, SQL, Linux, and production support. I aim to transition into a Software Engineer role, leveraging my background in cybersecurity, Google Cloud, and real-time system troubleshooting. I am passionate about development, cloud, and solving real-world tech challenges.</p>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Languages: Python, Java, JavaScript</li>
-        <li>Technologies: SQL, Google Cloud Platform, Linux, Networking</li>
-        <li>Tools: Wireshark, Burp Suite, Selenium, MySQL</li>
-        <li>Other: Cybersecurity Research, Production Support, Debugging</li>
-      </ul>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Image Steganography (Python):</strong> Built a GUI app with Tkinter to hide/retrieve secret messages in images using the Pillow library.</li>
-        <li><strong>Python Web Scraper:</strong> Created a multi-threaded data extractor with CAPTCHA bypass, scraping and storing product info into MySQL using Selenium.</li>
-        <li><strong>Bug Bounty Participation:</strong> Discovered vulnerabilities on platforms like OPPO (HackerOne) and practiced ethical hacking using OWASP standards.</li>
-      </ul>
-    </section>
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Google Cloud Essentials – Qwiklabs</li>
-        <li>Cisco Cybersecurity Essentials</li>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: naveen@example.com</p>
-      <p>GitHub: <a href="https://github.com/naveenpawarx">github.com/naveenpawarx</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/naveenpawar">linkedin.com/in/naveenpawar</a></p>
-    </section>
-  </main>
-  <script src="script.js"></script>
+<body class="bg-gray-900 text-green-400">
+  <div id="root"></div>
+  <script type="module" src="./index.tsx"></script>
 </body>
-</html>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
